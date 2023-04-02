@@ -27,7 +27,7 @@ function Copyright() {
 
 function CopyRightProvider() {
     return (
-        <div style={{ position: 'fixed', bottom: 0, width: '100%' }}>
+        <div style={{ position: 'relative', bottom: 0, width: '100%' }}>
             <ThemeProvider theme={Theme}>
                 <CssBaseline />
                 {/* Footer */}
