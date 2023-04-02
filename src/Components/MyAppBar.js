@@ -18,7 +18,7 @@ function MyAppBar() {
         <ThemeProvider theme={Theme}>
             <CssBaseline />
             {/* AppBar starts here */}
-            <AppBar position="fixed" >
+            <AppBar position="relative" >
                 <Toolbar sx={{ display: 'flex', justifyContent: 'center' }}>
                     <ComputerIcon sx={{ mr: 2 }} />
                     <Typography variant="appbar" noWrap>
