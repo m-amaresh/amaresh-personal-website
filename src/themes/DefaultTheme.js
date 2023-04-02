@@ -18,7 +18,7 @@ const Theme = createTheme({
         },
         background: {
             default: "#FFFFFF", // White
-            paper: "#9932CC", // Dark Orchid
+            paper: "#E63946", // Dark Orchid
         },
     },
     typography: {
