@@ -4,6 +4,7 @@ import * as React from 'react';
 import { Typography } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Button } from '@mui/material';
+import Paper from '@mui/material/Paper';
 
 // Material-UI icons
 import MailIcon from '@mui/icons-material/Mail';
@@ -16,12 +17,15 @@ import Grid from '@mui/material/Grid';
 // Material-UI theme
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from '../themes/DefaultTheme';
+import MyAppBar from './MyAppBar';
+import CopyRightProvider from './CopyRight';
 
 function Home() {
     return (
         <ThemeProvider theme={Theme}>
             <CssBaseline />
-            <div style={{ display: 'flex', justifyContent: 'center', margin: '0 3rem' }}>
+            <MyAppBar />
+            <Paper sx={{ background: 'transparent', display: 'flex', justifyContent: 'center', margin: '0 3rem', boxShadow: 'none' }}>
                 <Box sx={{
                     marginTop: '3rem',
                     maxWidth: '1000px',
@@ -66,11 +70,12 @@ function Home() {
                                     </Button>
                                 </Box>
                             </Box>
-
                         </Grid>
                     </Grid>
                 </Box>
-            </div>
+            </Paper>
+            <Box sx={{ margin: '3rem 0' }} />
+            <CopyRightProvider />
         </ThemeProvider>
     )
 }

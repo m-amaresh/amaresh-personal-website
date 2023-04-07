@@ -27,23 +27,20 @@ function Copyright() {
 
 function CopyRightProvider() {
     return (
-        <div style={{ position: 'relative', bottom: 0, width: '100%' }}>
-            <ThemeProvider theme={Theme}>
-                <CssBaseline />
-                {/* Footer */}
-                <Box sx={{ bgcolor: 'background.paper', p: 3 }} component="footer">
-                    <Typography
-                        variant="subtitle1"
-                        align="center"
-                        component="p"
-                    >
-                        Lets build
-                    </Typography>
-                    <Copyright />
-                </Box>
-            </ThemeProvider>
-            {/* End footer */}
-        </div>
-    );
+        <ThemeProvider theme={Theme}>
+            <CssBaseline />
+            {/* Footer */}
+            <Box sx={{ p: 3 }} component="footer">
+                <Typography
+                    variant="subtitle1"
+                    align="center"
+                    component="p"
+                >
+                    Lets build
+                </Typography>
+                <Copyright />
+            </Box>
+        </ThemeProvider>
+    )
 }
 export default CopyRightProvider;

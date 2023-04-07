@@ -5,7 +5,7 @@ import "@fontsource/poppins";
 const Theme = createTheme({
     palette: {
         primary: {
-            main: "#E63946", // Cardinal
+            main: '#ED2939', // Cardinal
             contrastText: "#FFFFFF", // White
         },
         secondary: {
@@ -64,12 +64,12 @@ const Theme = createTheme({
         subtitle1: {
             fontFamily: 'Roboto Slab',
             fontWeight: 500,
-            color: '#40E0D0', // Turquoise
+            color: '#424B54', // Charcoal
         },
         subtitle2: {
             fontFamily: 'Roboto Slab',
             fontWeight: 500,
-            color: '#40E0D0', // Turquoise
+            color:'#424B54', // Charcoal
         },
         body1: {
             fontFamily: 'Roboto Slab',
@@ -79,7 +79,7 @@ const Theme = createTheme({
         body2: {
             fontFamily: 'Roboto Slab',
             fontWeight: 400,
-            color: '#40E0D0', // Turquoise
+            color: '#523A34', // Van Dyke
         },
         button: {
             fontFamily: 'Roboto Slab',
